@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Personal Webpage</title>
+</head>
+<style>
+    body{
+        overflow-x: hidden;
+    }
+    .header {
+        position:fixed;
+        top:0%;
+        left:0%;
+        width: 100%;
+        height: 15px;
+        padding: 30px 12%;
+        background: #433f3f;
+        backdrop-filter: blur(10px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
+
+    .logo {
+        font-size: 30px;
+        color: white;
+        font-weight: 700;
+        transition: 0.3s ease;
+        text-decoration: none;
+    }
+
+    .logo:hover {
+        color: yellowgreen;
+        text-rendering:geometricPrecision;
+        text-shadow: 0 0 25px olivedrab;
+        transform: scale(1.1);
+    }
+
+    span {
+        color: olivedrab;
+    }
+
+    .nbar a {
+        font-size: 20px;
+        font-weight: 500;
+        color: white;
+        border-bottom: 3px solid transparent;
+        text-decoration: none;
+        margin: 0 20px;
+        transition: 0.3s ease;
+
+    }
+
+    .nbar a:hover,
+    .nbar a.active {
+        color: olivedrab;
+        border-bottom: 3px solid olivedrab;
+    }
+    .contact{
+        padding: 10px 28px;
+        background-color: white;
+        color:black;
+        border: 2px solid transparent;
+        border-radius: 8px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        transition: 0.3s ease;
+        margin: 0 165px;
+        text-decoration: none;
+    }
+
+    .contact:hover{
+        background-color: olivedrab;
+        box-shadow: 0 0 25px olivedrab;
+        color: white;
+    }
+
+    ::-webkit-scrollbar{
+            width: 15px;
+        }
+
+    ::-webkit-scrollbar-thumb{
+            background-color: olivedrab;
+        }
+
+    ::-webkit-scrollbar-track{
+            background-color: black;
+            width: 50px;
+        }
+        
+        .portfolio h2{
+            color: olivedrab;
+            line-height: 1;
+            align-items: center;
+            font-size: 52px;
+            text-shadow:0 0 25px rgb(216, 114, 30) ;   
+            padding: 4% 1px 1px;
+        }
+
+        .portfolio table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2% 1px 1px;
+        }
+
+        .portfolio table, .portfolio th, .portfolio td {
+            border: 2px solid black;
+        }
+
+        .portfolio th, .portfolio td {
+            text-align:center;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            gap: 2em;
+        }
+
+
+</style>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>sant</span>oshi</a>
+
+        <nav class="nbar">
+            <a href="Index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="Portfolio.html" class="active">Portfolio</a>
+        </nav>
+        <a href="contact.html" class="contact">Contact Me</a>
+    </header> 
+    <div id="Portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+        <table>
+            <tr>
+                <th>Photo</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><img src="https://images.pexels.com/photos/65222/buddha-meditation-east-eastern-65222.jpeg?auto=compress&cs=tinysrgb&w=600" width="100%" height="250px"  border-radius: 15px alt="Photo 1"></td>
+                <td>The image represents their greatest aspirations, ideals, and potential. For others, it <br>exemplifies the deep inner peace and contentment they find in Buddhism; <br>thus, they are drawn to an image that symbolizes calm and peace.<br> Buddha images have long conveyed the teachings of the Buddha.</td>
+            </tr>
+            <tr>
+                <td><img src="https://images.pexels.com/photos/239107/pexels-photo-239107.jpeg" width="100%" height="250px" alt="Photo 2"></td>
+                <td>It brings forth feelings of calmness and serenity, as one basks in the soft glow of the moon.<br> Moonlight symbolizes a connection to the subconscious mind and the hidden<br> aspects of oneself. It elicits a sense of wonder and curiosity, <br>as one explores the depths of their emotions and desires.</td>
+            </tr>
+            <tr>
+                <td><img src="https://images.pexels.com/photos/1413412/pexels-photo-1413412.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" width="100%" height="250px" alt="Photo 3"></td>
+                <td>Royal Enfield is an Indian multinational motorcycle manufacturing company, headquartered<br> in Chennai. The Royal Enfield brand, including its original English heritage, <br>is the oldest global motorcycle brand in continuous production. The <br>company operates manufacturing plants in Chennai in India.</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Personal Webpage</title>
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+        .header {
+            position:fixed;
+            top:0%;
+            left:0%;
+            width: 100%;
+            height: 15px;
+            padding: 30px 12%;
+            background: #433f3f;
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 30px;
+            color: white;
+            font-weight: 700;
+            transition: 0.3s ease;
+            text-decoration: none;
+        }
+
+        .logo:hover {
+            color: yellowgreen;
+            text-rendering:geometricPrecision;
+            text-shadow: 0 0 25px olivedrab;
+            transform: scale(1.1);
+        }
+
+        span {
+            color: olivedrab;
+        }
+
+        .nbar a {
+            font-size: 20px;
+            font-weight: 500;
+            color: white;
+            border-bottom: 3px solid transparent;
+            text-decoration: none;
+            margin: 0 20px;
+            transition: 0.3s ease;
+
+        }
+
+        .nbar a:hover,
+        .nbar a.active {
+            color: olivedrab;
+            border-bottom: 3px solid olivedrab;
+        }
+        .contact{
+            padding: 10px 28px;
+            background-color: white;
+            color:black;
+            border: 2px solid transparent;
+            border-radius: 8px;
+            font-size: 16px;
+            letter-spacing: 1px;
+            font-weight: 600;
+            transition: 0.3s ease;
+            margin: 0 165px;
+            text-decoration: none;
+        }
+
+        .contact:hover{
+            background-color: olivedrab;
+            box-shadow: 0 0 25px olivedrab;
+            color: white;
+        }
+
+        .main{
+            width: 100%;
+            min-height: 20vp;
+            background-color: rgb(red, green, blue);
+            display: flex;
+            align-items: center;
+            gap: 5em;
+            padding: 8% 8%; 
+        }
+
+        .main-content{
+            max-width: 500px;
+        }
+
+        .main-content h3{
+            font-size: 42px;
+        }
+
+        .main-content h1{
+            font-size: 52px;
+            line-height: 1;
+        }
+
+        .main-content p{
+            font-size: 18px;
+            margin: 15px 0 20px;
+        }
+
+        .btn-box{
+            width: 300px;
+            display: flex;
+            gap: 2em;
+        }
+
+        .btn-1{
+            padding: 5px 15px;
+            background-color: black;
+            color: white;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            font-size: 18px;
+            letter-spacing: 1px;
+            font-weight: 600;
+            transition: 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .btn-1:hover{
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+        }
+
+        .image img{
+            border-radius: 50%;
+            width: 320px;
+        }
+
+        ::-webkit-scrollbar{
+            width: 15px;
+        }
+
+        ::-webkit-scrollbar-thumb{
+            background-color: olivedrab;
+        }
+
+        ::-webkit-scrollbar-track{
+            background-color: black;
+            width: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>sant</span>oshi</a>
+
+        <nav class="nbar">
+            <a href="Index.html" class="active">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="Portfolio.html">Portfolio</a>
+        </nav>
+        <a href="contact.html" class="contact">Contact Me</a>
+    </header> 
+    <section id="Home" class="main">
+        <div class="main-content">
+        <h3>Hello</h3>
+        <h1>I'm <span>Santoshi</span> a Web Developer & Photographer</h1>
+
+        <p>I Have experience in photography, creating websites and applications.
+            I work well with front-end like HTML and CSS. I focus on making sites that are 
+            easy to use. I enjoy working with teams to deliver great projects and make clients happy.</p>
+
+            <div class="btn">
+                <a href="Resume.jpg" class="btn-1">Experience</a>
+            </div>
+    </div>   
+    
+    <div class="image">
+        <img src="photo2.jpg">
+    </div>
+
+</body>
+</html>

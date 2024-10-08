@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Personal Webpage</title>
+    <style>
+        body{
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+        .header {
+            position:fixed;
+            top:0%;
+            left:0%;
+            width: 100%;
+            height: 15px;
+            padding: 30px 12%;
+            background: #433f3f;
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 30px;
+            color: white;
+            font-weight: 700;
+            transition: 0.3s ease;
+            text-decoration: none;
+        }
+
+        .logo:hover {
+            color: yellowgreen;
+            text-rendering:geometricPrecision;
+            text-shadow: 0 0 25px olivedrab;
+            transform: scale(1.1);
+        }
+
+        span {
+            color: olivedrab;
+        }
+
+        .nbar a {
+            font-size: 20px;
+            font-weight: 500;
+            color: white;
+            border-bottom: 3px solid transparent;
+            text-decoration: none;
+            margin: 0 20px;
+            transition: 0.3s ease;
+
+        }
+
+        .nbar a:hover,
+        .nbar a.active {
+            color: olivedrab;
+            border-bottom: 3px solid olivedrab;
+        }
+        .contact{
+            padding: 10px 28px;
+            background-color: white;
+            color:black;
+            border: 2px solid transparent;
+            border-radius: 8px;
+            font-size: 16px;
+            letter-spacing: 1px;
+            font-weight: 600;
+            transition: 0.3s ease;
+            margin: 0 165px;
+            text-decoration: none;
+        }
+
+        .contact:hover{
+            background-color: olivedrab;
+            box-shadow: 0 0 25px olivedrab;
+            color: white;
+        }
+
+        .main{
+            width: 100%;
+            min-height: 20vp;
+            background-color: rgb(red, green, blue);
+            display: flex;
+            align-items: center;
+            gap: 5em;
+            padding: 8% 8%; 
+        }
+
+        .main-content{
+            max-width: 500px;
+        }
+
+        .main-content h3{
+            font-size: 42px;
+        }
+
+        .main-content h1{
+            font-size: 52px;
+            line-height: 1;
+        }
+
+        .main-content p{
+            font-size: 18px;
+            margin: 15px 0 20px;
+        }
+
+        .btn-box{
+            width: 300px;
+            display: flex;
+            gap: 2em;
+        }
+
+        .btn-1{
+            padding: 5px 15px;
+            background-color: black;
+            color: white;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            font-size: 18px;
+            letter-spacing: 1px;
+            font-weight: 600;
+            transition: 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .btn-1:hover{
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+        }
+
+        .image img{
+            border-radius: 50%;
+            width: 320px;
+        }
+
+        ::-webkit-scrollbar{
+            width: 15px;
+        }
+
+        ::-webkit-scrollbar-thumb{
+            background-color: olivedrab;
+        }
+
+        ::-webkit-scrollbar-track{
+            background-color: black;
+            width: 50px;
+        }
+
+        .con-me{
+            min-height: 100vh;
+            padding: 50px;
+            text-align: center;
+            background-color: rgb(168, 196, 113);
+        }
+
+        .conme{
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .conme h2{
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+
+        .con-wrapper{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 30px;
+        }
+
+        .con-form{
+            text-align: left;
+        }
+
+        .con-form h3{
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .form-group{
+            margin-bottom: 20px;
+        }
+
+        input, textarea{
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border:none;
+            background-color: #f8f9fa;
+            color:#080303;
+        }
+
+        input:focus,
+        textarea:focus{
+            outline: none;
+            box-shadow: 0 0 8px #bbb;
+        }
+
+        button{
+            display: inline-block;
+            padding: 5px 15px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            border:2px solid transparent;
+            letter-spacing: 1px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        button:hover{
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+        }
+
+        .con-info{
+        text-align: none;
+    }
+
+    .con-info h3{
+        margin-bottom: 20px;
+        color: #120404;
+    }
+
+    .con-info p{
+        margin-bottom: 10px;
+        color: #0f0404;
+    }
+
+    .con-info i{
+        color: #111211;
+        margin-right: 10px;
+
+    }
+
+        
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>sant</span>oshi</a>
+
+        <nav class="nbar">
+            <a href="Index.html" >Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="Portfolio.html">Portfolio</a>
+        </nav>
+        <a href="contact.html" class="contact" class="active">Contact Me</a>
+    </header> 
+    <section class="con-me">
+        <div class="conme">
+            <h2>Contact Me</h2>
+            <div class="con-wrapper">
+                <div class="con form">
+                    <h3>Send me a message</h3>
+                    <form> 
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="name" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                        <textarea name="message" placeholder="Your Message"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit">Send Message</button>
+                        </div>
+                        <p>Follow me on <a href="https://github.com/santoshireddy12">GitHub</a> |  <a href="https://www.linkedin.com/in/reddy-santoshi/">Linkedin</a></p>
+                    </form>
+                </div>
+                <div class="con-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-phone"></i> +1 659 202 9860</p>
+                    <p><i class="fas fa-envelope"></i> santoshi522@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Birmingham, Alabama 35205</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
